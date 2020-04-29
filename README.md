@@ -2,26 +2,26 @@
 
 ## Primeiro Modulo:
 
-### Java-0 -> Fibonacci
+### Java-0 :point_right: Fibonacci
 
 Faça um método @Desafio("Fibonacci") que retorne uma lista java.util.List com os primeiros números Integer da série de Fibonacci até 350.
 
 Faça um segundo método @Desafio("isFibonnaci") que recebe um Integer como parâmetro e retorne Boolean. Caso o número recebido por parâmetro esteja entre os números da sequência de Fibonnaci do @Desafio("Fibonnaci") retorne true, senão, false.
 
-### Java-6 -> Criptografia de Júlio César
+### Java-6 :point_right: Criptografia de Júlio César
 Automatize a criptografia e descriptografia de menagens utilizando a criptografia de Julio César.
 
 Regras:
 - As mensagens serão convertidas para minúsculas tanto para a criptografia quanto para descriptografia.
 - Os números serão mantidos
 
-### Java-13 -> Calculadora de Salário Líquido
+### Java-13 :point_right: Calculadora de Salário Líquido
 
 Implemente um algoritmo que será responsável por receber como parâmetro o salário bruto e retornar o salário líquido, já com todos os descontos de INSS e IRRF. (Utilize o método Math.round() para arredondar o resultado final).
 
 ## Segundo Módulo:
 
-### Java-1 -> Gerenciador de Times de Futebol
+### Java-1 :point_right: Gerenciador de Times de Futebol
 
 Nesse desafio deve-se construir o backend de um novo gerenciador de times de futebol.
 Deverá ser implementada a interface MeuTimeInterface.
@@ -41,7 +41,7 @@ Deverá ser implementada a interface MeuTimeInterface.
 - buscarTopJogadores: Retorna uma lista com o identificador dos top melhores jogadores, utilizar o menor identificador como critério de desempate.
 - buscarCorCamisaTimeDeFora: Retorna a cor da camisa do time adversário. Caso a cor principal do time da casa seja igual a cor principal do time de fora, retornar cor secundária do time de fora. Caso a cor principal do time da casa seja diferente da cor principal do time de fora, retornar cor principal do time de fora.
 
-### Java-7 -> Controle de estacionamento
+### Java-7 :point_right: Controle de estacionamento
 
 Objetivo desse sistema é auxiliar na gestão de um estacionamento. Esse estacionamento é formato por um número limitado de vagas, assim, as regras são:
 
@@ -53,9 +53,26 @@ Objetivo desse sistema é auxiliar na gestão de um estacionamento. Esse estacio
 - O estacionamento não deverá comportar o número superior de vagas.
 - Caso o estacionamento esteja lotado: * Chegue mais um novo carro, o primeiro que estacionou deverá sair * Caso o motorista do primeiro carro estacionado tenha uma idade superior a 55 anos, será escolhido o próximo motorista abaixo dos 55 anos. * Caso todos os motoristas, dentro do estacionamento, tenham mais de 55 anos e chegue um motorista, ele não conseguirá estacionar.
 
-### Java-14 -> Calcular Media, Moda e Mediana
+### Java-14 :point_right: Calcular Media, Moda e Mediana
 
 - O método que terá o nome average deve receber um array de inteiros e retornar a média de seus valores. A média pode ser obtida através da soma de todos os valores do conjunto, dividida pela quantidade de elementos do conjunto.
 - O método que terá o nome mode deve receber um array de inteiros e retornar um inteiro contendo o valor da moda do conjunto. A moda é representada pelo valor que mais se repete no conjunto.
 - O método que terá o nome median deve receber um array de inteiros e retornar um valor inteiro contendo a mediana do conjunto. A mediana pode ser obtida ordenando os valores no array e pegando o valor que se encontra no meio do mesmo. Para arrays com quantidade par de elementos, não haverá um único valor no meio, nesse caso a mediana será definida como a média entre os dois valores do meio do array.
 
+
+## Terceiro Módulo
+
+### Java-8 :point_right: Calculador de Atributos de Classe
+
+O desafio é somar ou subtrair determinados atributos do tipo BigDecimal de uma classe. Pra isso deverá ser criada uma annotation (“Somar”) para determinar quais atributos serão somados e outra annotation (“Subtrair”) para todos os atributos que serão subtraídos.
+
+Deverá ser criada uma interface Calculavel. Esta interface possui 3 métodos:
+
+- Somar: deverá somar todos os atributos do tipo BigDecimal de uma classe recebida como parâmetro e retornar um BigDecimal.
+- Subtrair: deverá somar todos os atributos do tipo BigDecimal de uma classe recebida como parâmetro e retornar um BigDecimal.
+- Totalizar: deverá subtrair os atributos annotados com “Subtrair” dos atributos annotados com “Somar”.
+
+Deverá também ser criada uma classe concreta que implementa Calculavel. O nome dessa classe deve ser CalculadorDeClasses.
+
+- Caso a classe não tenha nenhum atributo com annotation, retornar BigDecimal.ZERO
+- Caso o atributo não seja BigDecimal, retornar BigDecimal.ZERO
