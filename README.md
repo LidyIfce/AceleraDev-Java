@@ -1,8 +1,8 @@
-# Descrição dos desafios
+# Descrição dos desafios :memo:
 
 ## Primeiro Modulo:
 
-### Java-0 :point_right: Fibonacci
+#### Java-0 :arrow_right: Fibonacci
 
 Faça um método @Desafio("Fibonacci") que retorne uma lista java.util.List com os primeiros números Integer da série de Fibonacci até 350.
 
