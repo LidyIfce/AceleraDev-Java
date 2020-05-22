@@ -84,7 +84,7 @@ Deverá também ser criada uma classe concreta que implementa Calculavel. O nome
 
 Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA e banco de dados H2. 
 
-[Modelo Entidade Relacionamento de um banco de dados utilizado](https://codenation-challenges.s3-us-west-1.amazonaws.com/java-9/codenation-sample.png)
+[Modelo Entidade Relacionamento do banco de dados utilizado](https://codenation-challenges.s3-us-west-1.amazonaws.com/java-9/codenation-sample.png)
 
 Deve ser o utilizado o package entity para criar as entidades JPA para o modelo proposto.
 
@@ -98,3 +98,25 @@ Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spr
 Também foi disponibilizadas interfaces de serviço para cada uma das classes entity. 
 
 O objetivo era criar classes de serviço implementado as interfaces, e também as classes repository para manipulação dos dados.
+
+#### Java-15:Order Service
+
+Deverá ser implementados os métodos da classe OrderServiceImpl, uma implementação da Interface OrderService. A implementação de seus métodos deve utilizar a seguir as regras abaixo.
+
+ - Double calculateOrderValue(List items)
+
+Esse método deverá receber uma lista de OrderItem (Classe que contem o id do produto e sua quantidade no pedido) e deve retornar o valor total do pedido. Para calcular o valor total, deve-se obter o valor de cada item do pedido (OrderItem) multiplicando a quantidade de itens pelo valor do produto e, caso o produto tenha o atributo isSale igual a true, deve-se aplicar um desconto de 20%.
+
+ - Set findProductsById(List ids)
+
+Esse é um método de mapeamento, que deve receber uma lista de ids de produtos e devolver um conjunto de produtos.
+
+ - Double calculateMultipleOrders(List> orders)
+
+Esse método deverá calcular o valor total de todos os pedidos, sendo que cada pedido corresponde a uma lista de OrderItem. Para calcular o valor total de cada pedido, você deve seguir as mesmas regras do método calculateOrderValue.
+
+ - Map> groupProductsBySale(List productIds)
+
+Esse método deverá receber uma lista de ids de produtos e retornar um mapa com os produtos agrupados de acordo com o atributo isSale.
+
+**Observações:** Para implementar os métodos acima, deverão ser utilizados os métodos disponíveis na Interface ProductRepository Todos os métodos devem ignorar id inválidos Todos os método devem ser implementados utilizando a Stream API
