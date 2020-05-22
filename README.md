@@ -137,16 +137,21 @@ O objetivo é escrever as classes controller deste projeto respeitando as regras
  - Deverão ser criados os seguintes endpoints:
 
 /user
+
 /candidate
+
 /submission
+
 /acceleration
+
 /company
+
 /challenge
 
 
 - Deverão ser expostos todos os métodos existentes nas classes de serviço service.
 
-- Caso a entidade utilizada possua um DTO, esta deve ser utilizada.
+- Caso a entidade utilizada possua um DTO, este deve ser utilizada.
 
 
 
