@@ -4,11 +4,14 @@
 
 #### Java-0: Fibonacci
 
-Faça um método @Desafio("Fibonacci") que retorne uma lista java.util.List com os primeiros números Integer da série de Fibonacci até 350.
+Devem ser feitos os métodos:
 
-Faça um segundo método @Desafio("isFibonnaci") que recebe um Integer como parâmetro e retorne Boolean. Caso o número recebido por parâmetro esteja entre os números da sequência de Fibonnaci do @Desafio("Fibonnaci") retorne true, senão, false.
+- método @Desafio("Fibonacci") que retorne uma lista java.util.List com os primeiros números Integer da série de Fibonacci até 350.
+
+- método @Desafio("isFibonnaci") que recebe um Integer como parâmetro e retorne Boolean. Caso o número recebido por parâmetro esteja entre os números da sequência de Fibonnaci do @Desafio("Fibonnaci") retorne true, senão, false.
 
 #### Java-6: Criptografia de Júlio César
+
 Automatize a criptografia e descriptografia de menagens utilizando a criptografia de Julio César.
 
 Regras:
@@ -17,7 +20,7 @@ Regras:
 
 #### Java-13 Calculadora de Salário Líquido
 
-Implemente um algoritmo que será responsável por receber como parâmetro o salário bruto e retornar o salário líquido, já com todos os descontos de INSS e IRRF. (Utilize o método Math.round() para arredondar o resultado final).
+Deve ser implementado um algoritmo que será responsável por receber como parâmetro o salário bruto e retornar o salário líquido, já com todos os descontos de INSS e IRRF. (Utilize o método Math.round() para arredondar o resultado final).
 
 ## Segundo Módulo:
 
@@ -55,6 +58,8 @@ Objetivo desse sistema é auxiliar na gestão de um estacionamento. Esse estacio
 
 #### Java-14: Calcular Media, Moda e Mediana
 
+Devem ser implementados os seguintes métodos: average, mode, median
+
 - O método que terá o nome average deve receber um array de inteiros e retornar a média de seus valores. A média pode ser obtida através da soma de todos os valores do conjunto, dividida pela quantidade de elementos do conjunto.
 - O método que terá o nome mode deve receber um array de inteiros e retornar um inteiro contendo o valor da moda do conjunto. A moda é representada pelo valor que mais se repete no conjunto.
 - O método que terá o nome median deve receber um array de inteiros e retornar um valor inteiro contendo a mediana do conjunto. A mediana pode ser obtida ordenando os valores no array e pegando o valor que se encontra no meio do mesmo. Para arrays com quantidade par de elementos, não haverá um único valor no meio, nesse caso a mediana será definida como a média entre os dois valores do meio do array.
@@ -80,7 +85,7 @@ Deverá também ser criada uma classe concreta que implementa Calculavel. O nome
 
 ## Quarto Módulo
 
-#### Java-9:Criando Entidades de Banco de Dados em Java
+#### Java-9: Criando Entidades de Banco de Dados em Java
 
 Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA e banco de dados H2. 
 
@@ -91,7 +96,7 @@ Deve ser o utilizado o package entity para criar as entidades JPA para o modelo 
 
 ## Quinto Módulo
 
-#### Java-10:Criando e manipulando entidades no Banco de dados com Spring
+#### Java-10: Criando e manipulando entidades no Banco de dados com Spring
 
 Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA e banco de dados H2. Este projeto também já continham as classes de entidade entity já criadas para o [Modelo de Entidade Relacionamento](https://codenation-challenges.s3-us-west-1.amazonaws.com/java-10/codenation-sample-2.png).
 
@@ -99,7 +104,7 @@ Também foi disponibilizadas interfaces de serviço para cada uma das classes en
 
 O objetivo era criar classes de serviço implementado as interfaces, e também as classes repository para manipulação dos dados.
 
-#### Java-15:Order Service
+#### Java-15: Order Service
 
 Deverá ser implementados os métodos da classe OrderServiceImpl, uma implementação da Interface OrderService. A implementação de seus métodos deve utilizar a seguir as regras abaixo.
 
@@ -120,3 +125,29 @@ Esse método deverá calcular o valor total de todos os pedidos, sendo que cada 
 Esse método deverá receber uma lista de ids de produtos e retornar um mapa com os produtos agrupados de acordo com o atributo isSale.
 
 **Observações:** Para implementar os métodos acima, deverão ser utilizados os métodos disponíveis na Interface ProductRepository Todos os métodos devem ignorar id inválidos Todos os método devem ser implementados utilizando a Stream API
+
+
+## Sexto Módulo
+
+#### Java-11: Criando endpoints com Spring
+
+Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA, Spring-WEB e banco de dados H2. Este projeto também já continham as classes de entidade entity, repositórios repository e de serviço service. 
+O objetivo é escrever as classes controller deste projeto respeitando as regras abaixo:
+
+ - Deverão ser criados os seguintes endpoints:
+
+/user
+/candidate
+/submission
+/acceleration
+/company
+/challenge
+
+
+- Deverão ser expostos todos os métodos existentes nas classes de serviço service.
+
+- Caso a entidade utilizada possua um DTO, esta deve ser utilizada.
+
+
+
+
