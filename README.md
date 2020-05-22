@@ -76,3 +76,15 @@ Deverá também ser criada uma classe concreta que implementa Calculavel. O nome
 
 - Caso a classe não tenha nenhum atributo com annotation, retornar BigDecimal.ZERO
 - Caso o atributo não seja BigDecimal, retornar BigDecimal.ZERO
+
+## Quarto Módulo
+
+#### Java-10:Criando e manipulando entidades no Banco de dados com Spring
+
+Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA e banco de dados H2. Este projeto também já continham as classes de entidade entity já criadas para o Modelo de Entidade Relacionamento abaixo:
+
+![](https://codenation-challenges.s3-us-west-1.amazonaws.com/java-10/codenation-sample-2.png)
+
+Também foi disponibilizadas interfaces de serviço para cada uma das classes entity. 
+
+O objetivo era criar classes de serviço implementado as interfaces, e também as classes repository para manipulação dos dados.
