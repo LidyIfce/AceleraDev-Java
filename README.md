@@ -154,5 +154,29 @@ O objetivo é escrever as classes controller deste projeto respeitando as regras
 - Caso a entidade utilizada possua um DTO, este deve ser utilizada.
 
 
+## Sétimo Módulo
 
+#### Java-12: Oauth2 com Spring
+
+Neste desafio foi recebido um projeto Maven pré-configurado com Springboot, Spring-JPA, Spring-WEB, Spring-Security e banco de dados H2.
+
+ - Utilize a lib Spring Security OAuth2 AutoConfigure para utilizar Oauth2 no seu projeto spring.
+
+ - Configure o Resource Server através da annotation @EnableResourceServer para expor o endpoint /user e bloquear todos os outros.
+
+ - Configure o Authentication Server através da annotation @EnableAuthorizationServer.
+
+ - O Email dos Usuários deve ser utilizado como login
+ 
+ - A aplicação deve ser configurada para utilizar o UserRepository para buscar o Usuario por e-mail
+ 
+ - A senha não deve estar encriptada
+ 
+ - Utilize a propriedade do spring para setar scope password, client_id e client_secret.
+
+ - GET /oauth/token: recebendo client_id, client_secret, grant_type, user e password. 
+ 
+ - GET /user: deverá ser acessado sem autenticação.
+
+ - GET /company: deverá ser acessado apenas com autenticação. Utilize a autenticação Bearer + token para conseguir acesso.
 
